@@ -18,7 +18,7 @@ def plot_all(file_name, fit_params,to_norm, y_lim):
 
 def plot_heatmap(ax, dat_r, dat_tx, dat_th, fit_params, y_lim):
     last_spectrum, raman_shifts_locations, num_of_spectra, time_trace_location = convert_fit_params(dat_r, dat_tx, fit_params)
-    c = ax.pcolor(dat_r, dat_tx, dat_th, shading='nearest', cmap = 'gist_heat')
+    c = ax.pcolor(dat_r, dat_tx, dat_th, shading='nearest', cmap = 'jet')
     plt.colorbar(c, ax=ax)
     ax.set_title('Pump + Probe Heatmap')
     ax.set_xlabel('Raman Shift [cm-1]')
@@ -75,6 +75,8 @@ def plot_on_off_spectrum(ax, dat_r, dat_tx, dat_th, fit_params):
     ax.plot(dat_r, substracted_difference_spec, color='black', linewidth=4, label=f'difference')
     ax.legend()
     ax.grid()
+    ax.set_xlabel('Raman Shift [cm-1]')
+    ax.set_ylabel('Intensity [counts]')
 
 def plot_laser_power(ax,dat_meta):
     # extract meta-data into proper variables:
