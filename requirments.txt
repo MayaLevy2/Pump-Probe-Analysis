@@ -1,0 +1,9 @@
+you will need the following package:
+numpy
+math
+matplotlib
+nptdms
+pandas
+scipy
+
+use pip install and add it to your environment packages
