@@ -20,9 +20,9 @@ Running the project using "main.py" file by running "main()" function.
 Runnnig the test by running the "test.py" file.
 
 # Explanations about how to use the project:
-- In the main.py file you will find all the relevant parameters that can be changed by the user.
-- next to each parameter you will find the unit of merits, and some basic explanation.
-- I personaly recomend you to play with the following parameters in order to check the code:
+- When start running the program you will need to insert valus.
+- use "enter" to skeep this part and insert defulat parameters.
+- If you want to play with the options of the code, this is how it works:
 
 - fit_timetrace_start: To look at resonable values, change between 1-15 in multiplies of 0.025 (for example 3.575 is a valid value). You will see the fit on ax[0,1] change it's shape and it's tau value in the legend
 - Raman_shift_start/end: Change between 45 and 75. you will see the valuse of the time trace (ax[0,1]) and the blue lines on ax[0,0] change
